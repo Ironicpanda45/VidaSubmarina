@@ -1,0 +1,185 @@
+body {
+    background: #141f3b;
+}
+
+nav {
+    background-color: #161616;
+    height: 117px;
+    width: 99%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+nav img {
+    height: 6vw;
+    width: auto;
+}
+
+nav h2 {
+    color: #ffffff;
+    font-family: "Agdasima", sans-serif;
+    font-weight: 700;
+    font-size: 4vw;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.Bloques {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    justify-content: center;
+}
+
+.Bloques div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    height: 10vw;
+    width: calc(30% - 20px);
+    border-radius: 2vw;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.05s ease, box-shadow 0.2s ease;
+    border: 1px solid #ffffff;
+}
+
+.Bloques div:nth-child(1) {
+    background-color: #007BFF;
+}
+
+.Bloques div:nth-child(2) {
+    background-color: #28A745;
+}
+
+.Bloques div:nth-child(3) {
+    background-color: #17A2B8;
+}
+
+.Bloques div:nth-child(4) {
+    background-color: #0056B3;
+}
+
+.Bloques div:nth-child(5) {
+    background-color: #6F42C1;
+}
+
+.Bloques div:nth-child(6) {
+    background-color: #DC3545;
+}
+
+.Bloques div:nth-child(7) {
+    background-color: #FF6347;
+}
+
+.Bloques div:nth-child(8) {
+    background-color: #FD7E14;
+}
+
+.Bloques div:nth-child(9) {
+    background-color: #343A40;
+}
+
+.Bloques h3 {
+    font-family: "Sriracha", cursive;
+    font-weight: 400;
+    font-size: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 1vw;
+    color: white;
+    z-index: 2;
+    pointer-events: none;
+    margin: 0;
+}
+
+.Bloques img {
+    height: 110%;
+    width: auto;
+    mix-blend-mode: darken;
+    opacity: 30%;
+}
+
+.right-block {
+    width: 50%;
+    height: auto;
+    background-color: #161616;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    border-radius: 20px;
+    margin-right: 4vw;
+    border: 1px solid #ffffff;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease, transform 0.6s ease;
+}
+
+.right-block h2 {
+    font-family: "Agdasima", sans-serif;
+    font-size: 2vw;
+    color: white;
+    transition: transform 0.3s ease;
+    margin: 0;
+}
+
+.right-block img {
+    width: 5vw;
+    height: auto;
+    margin: 0;
+    border-radius: 2vw;
+    transition: width 0.4s ease;
+}
+
+.right-block h3 {
+    font-family: "Agdasima", sans-serif;
+    font-size: 1.3vw;
+    font-weight: 100;
+    color: white;
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    text-align: center;
+}
+.coralia-color {
+    color: #1D97D4;
+}
+@keyframes sleeping {
+    0% { transform: scale(0.95); }
+    50% { transform: scale(1); }
+    100% { transform: scale(0.95); }
+}
+
+nav img.sleeping {
+    animation: sleeping 2s ease infinite;
+}
+@keyframes wake {
+    0% { transform: scale(0.2); }
+    100% { transform: scale(1); }
+}
+
+nav img.wake {
+    animation: wake 0.6s ease;
+}
